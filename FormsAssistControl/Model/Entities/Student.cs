@@ -2,7 +2,7 @@
 namespace FormsAssistControl
 {
 	//https://github.com/HumbertoJaimes
-	public class Student
+	public class Student:IKeyObject
 	{
 
 
@@ -46,5 +46,10 @@ namespace FormsAssistControl
 			set { average = value; }
 		}
 
-	}
+        public string Key
+        {
+            get;
+            set;
+        }
+    }
 }

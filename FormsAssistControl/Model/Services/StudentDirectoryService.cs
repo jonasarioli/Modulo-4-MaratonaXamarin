@@ -33,7 +33,7 @@ namespace FormsAssistControl
 				student.Group = group;
 				student.StudentNumber = rdn.Next(12384748, 32384748).ToString();
 				student.Average = rdn.Next(100, 1000) / 10;
-
+                student.Key = student.StudentNumber;
 				students.Add(student);
 
 			}
